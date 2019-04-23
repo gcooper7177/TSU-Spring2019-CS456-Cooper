@@ -1,0 +1,9 @@
+>>> def main():
+	from collections import Counter
+	print("Enter file name:")
+	x = input()
+	fileString = open(x).read().split()
+	count = Counter()
+	for word in fileString:
+		count[word] += 1
+	print(count)
